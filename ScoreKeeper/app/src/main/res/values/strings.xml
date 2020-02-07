@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Baseball GameTracker Deluxe</string>
+    <string name="edit_name">Enter Team Name</string>
+    <string name="runs">Runs</string>
+    <string name="hits">Hits</string>
+    <string name="walks">Walks</string>
+    <string name="innings">inning :</string>
+    <string name="blanks">0</string>
+    <string name="runButton">add a run</string>
+    <string name="walkButton">add a walk</string>
+    <string name="hitButton">add a hit</string>
+    <string name="resetButton">reset</string>
+    <string name="top">top</string>
+    <string name="bottom">bottom</string>
+</resources>

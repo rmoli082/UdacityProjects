@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diamond" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#ededed">
+
+        <LinearLayout
+            android:id="@+id/scoreboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#d4d2d2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/team_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/team_1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:text="@string/edit_name"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/team_1_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_name"
+                    android:padding="8dp"
+                    android:text="@string/runs"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/team_1_hits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_name"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:text="@string/hits"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/team_1_walks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_name"
+                    android:layout_alignParentRight="true"
+                    android:padding="8dp"
+                    android:text="@string/walks"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/team_1_run_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_runs"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/blanks"
+                    android:textAllCaps="true"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/team_1_hit_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_runs"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/blanks"
+                    android:textAllCaps="true"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/team_1_walk_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_runs"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/blanks"
+                    android:textAllCaps="true"
+                    android:textSize="48sp" />
+
+                <Button
+                    android:id="@+id/team_1_add_run_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_run_score"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="onTeamARunClick"
+                    android:text="@string/runButton" />
+
+                <Button
+                    android:id="@+id/team_1_add_hit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_add_run_button"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="onTeamAHitClick"
+                    android:text="@string/hitButton" />
+
+                <Button
+                    android:id="@+id/team_1_add_walk_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_1_add_hit_button"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="onTeamAWalkClick"
+                    android:text="@string/walkButton" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:id="@+id/team_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/team_2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:text="@string/edit_name" />
+
+                <TextView
+                    android:id="@+id/team_2_runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_name"
+                    android:padding="8dp"
+                    android:text="@string/runs"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/team_2_hits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_name"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:text="@string/hits"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/team_2_walks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_name"
+                    android:layout_alignParentRight="true"
+                    android:padding="8dp"
+                    android:text="@string/walks"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/team_2_run_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_runs"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/blanks"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/team_2_hit_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_runs"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/blanks"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/team_2_walk_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_runs"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/blanks"
+                    android:textSize="48sp" />
+
+                <Button
+                    android:id="@+id/team_2_add_run_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_walk_total"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="onTeamBRunClick"
+                    android:text="@string/runButton" />
+
+                <Button
+                    android:id="@+id/team_2_add_hit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_add_run_button"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="onTeamBHitClick"
+                    android:text="@string/hitButton" />
+
+                <Button
+                    android:id="@+id/team_2_add_walk_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/team_2_add_hit_button"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="onTeamBWalkClick"
+                    android:text="@string/walkButton" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/innings_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreboard"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/innings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_alignBaseline="@id/innings_total"
+                android:text="@string/innings"
+                android:textAllCaps="true"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/prev_inning_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@id/innings"
+                android:layout_alignBaseline="@id/innings_total"
+                android:onClick="onPrevInningClick"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/innings_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@id/prev_inning_button"
+                android:text="@string/blanks"
+                android:textSize="48sp" />
+
+            <Button
+                android:id="@+id/next_inning_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/innings_total"
+                android:layout_alignBaseline="@id/innings_total"
+                android:onClick="onNextInningClick"
+                android:text="+" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onResetClick"
+            android:text="@string/resetButton" />
+
+        <RadioGroup
+            android:id="@+id/radio_button_half_inning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/innings_banner"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="onHalfInningClick"
+                android:text="@string/top"
+                android:textAllCaps="true" />
+
+            <RadioButton
+                android:id="@+id/radio_button_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="onHalfInningClick"
+                android:text="@string/bottom"
+                android:textAllCaps="true" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>
