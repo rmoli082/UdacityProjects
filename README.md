@@ -1,6 +1,6 @@
 # UdacityProjects
 
-While I work through the Udacity Android Basics Nanodegree program, there are 8 projects that are required for completion of the Nanodegree. All the projects are collected here instead of being given their own repository. A brief description of each project follows below:
+While I work through the Udacity Android Basics Nanodegree program, there are 6 projects that are required for completion of the Nanodegree. All the projects are collected here instead of being given their own repository. A brief description of each project follows below:
 
 ### Project 1: Single Screen App - Sharmoli Software Solutions
 This project is a basic, single screen info app for a ficticious company. Displays text and icons pertaining to opening and close hours, contact information, and a brief bio of the company.
