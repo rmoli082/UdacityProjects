@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Multimedia Player</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="media_info">Media Info</string>
+    <string name="your_library">Your Library</string>
+    <string name="add_media">Add Media</string>
+    <string name="podcast">Podcast/Audiobook cover</string>
+    <string name="title">Title:</string>
+    <string name="title_hint">Enter title here</string>
+    <string name="artist">Artist/Author:</string>
+    <string name="artist_hint">Enter artist or author here</string>
+    <string name="enter_description">Enter\ndescription:</string>
+    <string name="audiobook_prompt">Is this an audiobook?</string>
+    <string name="cover_prompt">Select cover:</string>
+    <string name="cover_name">Cover Image</string>
+    <string name="play">Play</string>
+    <string name="rewind">Rewind</string>
+    <string name="previous_chapter">Previous Chapter</string>
+    <string name="forward">Forward</string>
+    <string name="next_chapter">Next Chapter</string>
+    <string name="description">In this young podcast, veteran cooking authority America’s Test Kitchen branches out from its usual tried-and-tested recipe testing format. Admittedly, the episode topics don’t have much street appeal: In the debut 30-ish minute episode you’ll hear all about celery; in another, the focus is ketchup. But instead of relaying best cooking practices or doing side-by-side brand evaluations, the show broaches the infinitely more interesting under-told backstories (celery’s “it” veggie status in the Victorian era) and big-picture questions (does ketchup belong on a burger?). Not at all straight-laced and clinical, the tone of the show is more lighthearted fun mixed with genuine nerdy curiosity (especially the LOL-inducing episode about flavor; I won’t spoil it, but dirty sock-flavored Jelly Bellys are involved).</string>
+    <string name="description2">One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them.\nIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\nIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.</string>
+</resources>

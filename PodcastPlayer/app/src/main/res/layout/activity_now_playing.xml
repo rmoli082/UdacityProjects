@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/song_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/cover_name"/>
+
+    <LinearLayout
+        android:id="@+id/now_playing_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/song_title"
+            style="@style/TextTheme"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/song_artist"
+            style="@style/TextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight">
+
+        <ImageView
+            android:id="@+id/rewind"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:layout_toStartOf="@id/play"
+            android:src="@drawable/baseline_replay_10_black_48"
+            android:contentDescription="@string/rewind"/>
+
+        <ImageView
+            android:id="@+id/previous_chapter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:layout_toStartOf="@id/rewind"
+            android:src="@drawable/baseline_skip_previous_black_48"
+            android:visibility="gone"
+            android:contentDescription="@string/previous_chapter"/>
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/baseline_play_circle_outline_black_48"
+            android:contentDescription="@string/play"/>
+
+        <ImageView
+            android:id="@+id/forward"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:layout_toEndOf="@id/play"
+            android:src="@drawable/baseline_forward_10_black_48"
+            android:contentDescription="@string/forward"/>
+
+        <ImageView
+            android:id="@+id/next_chapter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:layout_toEndOf="@id/forward"
+            android:src="@drawable/baseline_skip_next_black_48"
+            android:visibility="gone"
+            android:contentDescription="@string/next_chapter"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

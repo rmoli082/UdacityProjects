@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Quiz Bowl</string>
+    <string name="enter_name_hint">Enter your name</string>
+    <string name="first_question_header">Question 1</string>
+    <string name="first_question_text">What is the capital of Canada?</string>
+    <string name="q1_option1">Toronto</string>
+    <string name="q1_option2">Montreal</string>
+    <string name="q1_option3">Ottawa</string>
+    <string name="q1_option4">Vancouver</string>
+    <string name="second_question_header">Question 2</string>
+    <string name="second_question_text">Which of the following cities are not US state capitals?</string>
+    <string name="q2_option1">New York, New York</string>
+    <string name="q2_option2">Los Angeles, California</string>
+    <string name="q2_option3">Atlanta, Georgia</string>
+    <string name="q2_option4">Chicago, Illinois</string>
+    <string name="third_question_header">Question 3</string>
+    <string name="third_question_text">What is Canada\'s national anthem called?</string>
+    <string name="q3_option1">Maple Leaf Forever</string>
+    <string name="q3_option2">Star Spangled Banner</string>
+    <string name="q3_option3">God Save the Queen</string>
+    <string name="q3_option4">O Canada</string>
+    <string name="fourth_question_header">Question 4</string>
+    <string name="fourth_question_text">In what year was the US Declaration of Independence?</string>
+    <string name="q4_answer_text">Enter year</string>
+    <string name="check_answer_button">Submit Answer</string>
+    <string name="number_correct">Number correct: </string>
+    <string name="score_total">0</string>
+    <string name="question_amount">/4</string>
+    <string name="results_header">Results for</string>
+    <string name="the_answer">The Answer</string>
+    <string name="welcome_text">Welcome to Quiz Bowl!</string>
+    <string name="welcome_button">Ready? Set? Go!!!</string>
+    <string name="name_banner">Name:</string>
+</resources>

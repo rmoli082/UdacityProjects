@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MediaInfo">
+
+    <ImageView
+        android:id="@+id/media_song_cover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:src="@drawable/audiobook"
+        android:paddingTop="16dp"
+        android:contentDescription="@string/cover_name"/>
+
+    <TextView
+        android:id="@+id/media_song_title"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/media_song_artist"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="26sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/podcast_description"
+            style="@style/TextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</LinearLayout>

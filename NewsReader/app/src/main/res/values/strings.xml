@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Galaxy News</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_name">Newsfeed Settings</string>
+    <string name="settings_results_label">Results Per Page</string>
+    <string name="settings_results_key">results_per_page</string>
+    <string name="settings_results_default">0</string>
+    <string name="settings_query_label">Search Terms</string>
+    <string name="settings_query_key">search_terms</string>
+    <string name="settings_query_default">debates</string>
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key">order_by</string>
+    <string name="settings_order_by_default">@string/settings_order_by_most_recent_value</string>
+    <string name="settings_order_by_magnitude_label">Relevance</string>
+    <string name="settings_order_by_magnitude_value">relevance</string>
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value">newest</string>
+    <string name="settings_open_in_label">Open In</string>
+    <string name="settings_open_in_key">open_in</string>
+    <string name="settings_open_in_default">@string/settings_open_in_external_value</string>
+    <string name="settings_open_in_app_label">App</string>
+    <string name="settings_open_in_app_value">app</string>
+    <string name="settings_open_in_external_label">External Browser</string>
+    <string name="settings_open_in_external_value">browser</string>
+    <string name="refresh_menu_item">Refresh</string>
+    <string name="article">article</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="query_prefix">q</string>
+    <string name="tags_prefix">show-tags</string>
+    <string name="api_prefix">api-key</string>
+    <string name="order_prefix">order-by</string>
+    <string name="results_prefix">page-size</string>
+    <string name="tags_show">contributor,keyword</string>
+    <string name="api_key">d48fb942-0837-4ac2-8a6f-5565fbe344cd</string>
+    <string name="no_articles">No articles found</string>
+</resources>
