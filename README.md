@@ -8,13 +8,15 @@ This project is a basic, single screen info app for a ficticious company. Displa
 ### Project 2: ScoreKeeper
 This project is a simple scorekeeper app for a baseball game. Allows entry of team names and tracking the inning as well as runs, hits and walks. for each team. Team at bat is highlighted by selecting inning half from a radio button.
 
-### Project 3: Quiz App
+### Project 3: QuizBowl App
 A simple single-screen activity quiz app. Radio buttons, check boxes, text entry input checked for quiz answers. Get a score out of four when you test your knowledge of Canadian and US history.
 
-### Project 4: Musical Structure App - Podcast Player
+### Project 4: Podcast Player (Musical Structure App)
 A simple multi-screen activity that builds the structure of a podcast and audiobook player. Uses multiple activities to display the currently playing media file, information about a selected media file, or to add a new media file to the list. Note: Does not actually play or load audio files.
 
 ### Project 5: Tour Guide App
+A multi-screen activity that highlights several places to eat, drink, visit or sleep when visiting Toronto. Each attraction has its own information page that allows the user to call the attraction, visit its website, or get driving directions from google maps to the attraction.
 
 
-### Project 6: News Reader App - Galaxy News
+### Project 6: NewsReader App
+A news reader app that allows the user to search The Guardian Online's news stories to display relevant news. In-app preferences allows for the selected article to be viewed in app or opened in an external browser, as well as setting the search term and number of search results.
