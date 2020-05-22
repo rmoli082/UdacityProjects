@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/poster_display_iv"
+        android:contentDescription="@string/image_placeholder"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"/>
+
+</FrameLayout>

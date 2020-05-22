@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="popular">Popular Movies</string>
+    <string name="top_rated">Top Rated Movies</string>
+    <string name="favourites">Favourite Movies</string>
+    <string name="popular_menu">Popular</string>
+    <string name="top_rated_menu">Top Rated</string>
+    <string name="error_text">Unable to fetch movie listings</string>
+    <string name="image_placeholder">Movie Poster</string>
+    <string name="favourites_button">Add to favourites</string>
+    <string name="ratings_outta10">/10</string>
+    <string name="minutes_suffix">mins</string>
+    <string name="read_more">Read Full Review…</string>
+
+    <string name="prefs">MovieAppsPrefs</string>
+    <string name="search_type">searchType</string>
+    <string name="search_pop">popular</string>
+    <string name="search_top">topRated</string>
+    <string name="search_fave">favourites</string>
+
+    <string name="current_movie">currentMovie</string>
+
+    <string name="snackbar_add">Added to favourites</string>
+    <string name="snackbar_delete">Removed from favourites</string>
+
+</resources>
